@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".context.ContextActivity"> </activity>
+        <activity android:name=".activity.lifecycle.ActivityLifecycle"></activity>
     </application>
 
 </manifest>

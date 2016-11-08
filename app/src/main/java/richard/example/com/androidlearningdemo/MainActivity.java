@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
 
+import richard.example.com.androidlearningdemo.activity.lifecycle.ActivityLifecycle;
 import richard.example.com.androidlearningdemo.context.ContextActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -18,9 +19,7 @@ public class MainActivity extends AppCompatActivity {
     public Button buttonActivity;
     public Button buttonContext;
 //    public ListView mlistView;
-//    public Context context = this;
- //   public Intent intent;// = new Intent(MainActivity.this, ContextActivity.class);
-    public Intent intent  = new Intent(MainActivity.this, ContextActivity.class);
+   public Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.d(TAG, "============== button Context clicked ============= ");
-                //intent  = new Intent(MainActivity.this, ContextActivity.class);
+                intent  = new Intent(MainActivity.this, ActivityLifecycle.class);
                 startActivity(intent);
             }
         });
