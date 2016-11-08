@@ -26,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+//        mlistView = (ListView) findViewById(R.id.listview_activities);
+
+        //============================================================================
         buttonActivity = (Button) findViewById(R.id.button_activity);
         buttonActivity.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        //============================================================================
         buttonContext = (Button) findViewById(R.id.button_context);
         buttonContext.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        mlistView = (ListView) findViewById(R.id.listview_activities);
+        //=================================================================================
 
 
     }
