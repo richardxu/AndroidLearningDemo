@@ -11,7 +11,7 @@
     tools:context="richard.example.com.androidlearningdemo.MainActivity">
 
     <Button
-        android:text="Activity"
+        android:text="Activity LifeCircle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -32,7 +32,7 @@
         android:layout_above="@+id/button_activity" />
 
     <Button
-        android:text="Context"
+        android:text="MyApplication Context"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/button_context"

@@ -31,17 +31,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.d(TAG, "============== buttongActivity clicked ============= ");
+                intent  = new Intent(MainActivity.this, ActivityLifecycle.class);
+                startActivity(intent);
             }
         });
 
+
         buttonContext = (Button) findViewById(R.id.button_context);
-
-
         buttonContext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Log.d(TAG, "============== button Context clicked ============= ");
-                intent  = new Intent(MainActivity.this, ActivityLifecycle.class);
+                intent  = new Intent(MainActivity.this, ContextActivity.class);
                 startActivity(intent);
             }
         });
