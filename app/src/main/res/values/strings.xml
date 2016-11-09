@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AndroidLearningDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="message">Please see logcat</string>
 </resources>

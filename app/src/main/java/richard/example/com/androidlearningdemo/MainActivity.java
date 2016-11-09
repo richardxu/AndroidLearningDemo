@@ -11,6 +11,7 @@ import android.widget.ListView;
 
 import richard.example.com.androidlearningdemo.activity.lifecycle.ActivityLifecycle;
 import richard.example.com.androidlearningdemo.context.ContextActivity;
+import richard.example.com.androidlearningdemo.fragment.FragmentLifecyle;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     public Button buttonActivity;
     public Button buttonContext;
+    public Button buttonFragmentCyle;
 //    public ListView mlistView;
    public Intent intent;
 
@@ -52,7 +54,15 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //=================================================================================
-
+        buttonFragmentCyle = (Button) findViewById(R.id.button_fragment_cycle);
+        buttonFragmentCyle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d(TAG, "============== button Context clicked ============= ");
+                intent  = new Intent(MainActivity.this, FragmentLifecyle.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }
