@@ -49,4 +49,13 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="29dp" />
 
+    <Button
+        android:text="Fragment TabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_fragment_tablayout"
+        android:layout_below="@+id/button_fragment_cycle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp" />
+
 </RelativeLayout>
