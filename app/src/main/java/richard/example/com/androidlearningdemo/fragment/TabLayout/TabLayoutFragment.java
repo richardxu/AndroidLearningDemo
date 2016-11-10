@@ -1,4 +1,4 @@
-package richard.example.com.androidlearningdemo.fragment;
+package richard.example.com.androidlearningdemo.fragment.TabLayout;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;

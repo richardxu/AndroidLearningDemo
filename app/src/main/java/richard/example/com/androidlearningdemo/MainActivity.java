@@ -1,18 +1,16 @@
 package richard.example.com.androidlearningdemo;
 
-import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ListView;
 
 import richard.example.com.androidlearningdemo.activity.lifecycle.ActivityLifecycle;
 import richard.example.com.androidlearningdemo.context.ContextActivity;
 import richard.example.com.androidlearningdemo.fragment.FragmentLifecyle;
-import richard.example.com.androidlearningdemo.fragment.TabLayoutFragment;
+import richard.example.com.androidlearningdemo.fragment.TabLayout.TabLayoutFragment;
 
 public class MainActivity extends AppCompatActivity {
 
