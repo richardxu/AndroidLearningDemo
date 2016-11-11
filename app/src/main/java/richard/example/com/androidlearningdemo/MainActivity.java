@@ -9,6 +9,7 @@ import android.widget.Button;
 
 import richard.example.com.androidlearningdemo.activity.lifecycle.ActivityLifecycle;
 import richard.example.com.androidlearningdemo.context.ContextActivity;
+import richard.example.com.androidlearningdemo.fragment.DialogFragment.DialogDemoActivity;
 import richard.example.com.androidlearningdemo.fragment.FragmentLifecyle;
 import richard.example.com.androidlearningdemo.fragment.TabLayout.TabLayoutFragment;
 
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     public Button buttonContext;
     public Button buttonFragmentCyle;
     public Button buttonTabLayoutFragment;
+    public Button buttonDialogFragment;
 
 //    public ListView mlistView;
    public Intent intent;
@@ -75,6 +77,18 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        //=================================================================================
+        buttonFragmentCyle = (Button) findViewById(R.id.button_fragment_dialog);
+        buttonFragmentCyle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d(TAG, "============== button fragment tablayout clicked ============= ");
+                intent  = new Intent(MainActivity.this, DialogDemoActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 }

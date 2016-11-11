@@ -22,6 +22,7 @@
         <activity android:name=".activity.lifecycle.ActivityLifecycle"></activity>
         <activity android:name=".fragment.FragmentLifecyle"></activity>
         <activity android:name=".fragment.TabLayout.TabLayoutFragment"></activity>
+        <activity android:name=".fragment.DialogFragment.DialogDemoActivity"></activity>
     </application>
 
 </manifest>
