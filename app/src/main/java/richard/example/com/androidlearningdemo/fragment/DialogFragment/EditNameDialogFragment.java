@@ -3,11 +3,14 @@ package richard.example.com.androidlearningdemo.fragment.DialogFragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.DialogFragment;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
+import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import richard.example.com.androidlearningdemo.R;
 
@@ -15,9 +18,14 @@ import richard.example.com.androidlearningdemo.R;
  * Created by Administrator on 2016/11/11.
  */
 
-public class EditNameDialogFragment extends DialogFragment {
+public class EditNameDialogFragment extends DialogFragment implements TextView.OnEditorActionListener {
 
     private EditText mEditText;
+
+    //1,Define the listener interface with a method passing back data result.
+    public interface EditNameDialogListener{
+        void onFinishEditDialog(String inputText);
+    }
 
     public EditNameDialogFragment(){
         //Empty constructor is required for DialogFragment
@@ -55,6 +63,24 @@ public class EditNameDialogFragment extends DialogFragment {
         getDialog().getWindow().setSoftInputMode(
                 WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE
         );
+
+        //2. Setup a callback when the "Done" button is pressed on keyboard
+        mEditText.setOnEditorActionListener(this);
     }
 
+    // Fires whenever the textfield has an action preformed
+    // In this case, when the "Done" button is pressed
+    // REQUIRES a 'soft keyboard' (virtual keyboard)
+    @Override
+    public boolean onEditorAction(TextView textView, int actionID, KeyEvent keyEvent) {
+        if(EditorInfo.IME_ACTION_DONE == actionID){
+            //Return input text back to acitivity through the implemnted Listener
+            EditNameDialogListener listener = (EditNameDialogListener) getActivity();
+            listener.onFinishEditDialog(mEditText.getText().toString());
+            //Close the dialog and return back to the parent activity
+            dismiss();
+            return true;
+        }
+        return false;
+    }
 }
