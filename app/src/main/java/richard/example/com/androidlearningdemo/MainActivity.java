@@ -12,6 +12,7 @@ import richard.example.com.androidlearningdemo.context.ContextActivity;
 import richard.example.com.androidlearningdemo.fragment.DialogFragment.DialogDemoActivity;
 import richard.example.com.androidlearningdemo.fragment.FragmentLifecyle;
 import richard.example.com.androidlearningdemo.fragment.TabLayout.TabLayoutFragment;
+import richard.example.com.androidlearningdemo.toolBar.ActivityToolBar;
 import richard.example.com.androidlearningdemo.webview.ActivtyWebView;
 
 public class MainActivity extends AppCompatActivity {
@@ -104,6 +105,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        //=================================================================================
+        buttonFragmentCyle = (Button) findViewById(R.id.button_fragment_toolbar);
+        buttonFragmentCyle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d(TAG, "============== button fragment toolbar clicked ============= ");
+                intent  = new Intent(MainActivity.this, ActivityToolBar.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }
