@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
 //        setContentView(R.layout.framelayout);
 //        setContentView(R.layout.activity_linearlayout);
+//        setContentView(R.layout.vector_drawables);
 
 //        mlistView = (ListView) findViewById(R.id.listview_activities);
 //
