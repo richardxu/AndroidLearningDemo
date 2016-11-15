@@ -12,6 +12,7 @@ import richard.example.com.androidlearningdemo.context.ContextActivity;
 import richard.example.com.androidlearningdemo.fragment.DialogFragment.DialogDemoActivity;
 import richard.example.com.androidlearningdemo.fragment.FragmentLifecyle;
 import richard.example.com.androidlearningdemo.fragment.TabLayout.TabLayoutFragment;
+import richard.example.com.androidlearningdemo.webview.ActivtyWebView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,8 +32,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        mlistView = (ListView) findViewById(R.id.listview_activities);
+//        setContentView(R.layout.framelayout);
+//        setContentView(R.layout.activity_linearlayout);
 
+//        mlistView = (ListView) findViewById(R.id.listview_activities);
+//
         //============================================================================
         buttonActivity = (Button) findViewById(R.id.button_activity);
         buttonActivity.setOnClickListener(new View.OnClickListener() {
@@ -85,6 +89,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Log.d(TAG, "============== button fragment tablayout clicked ============= ");
                 intent  = new Intent(MainActivity.this, DialogDemoActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        //=================================================================================
+        buttonFragmentCyle = (Button) findViewById(R.id.button_fragment_webview);
+        buttonFragmentCyle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d(TAG, "============== button fragment webview clicked ============= ");
+                intent  = new Intent(MainActivity.this, ActivtyWebView.class);
                 startActivity(intent);
             }
         });
