@@ -3,11 +3,14 @@ package richard.example.com.androidlearningdemo.listview.adapter;
 import android.content.ClipData;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -43,8 +46,9 @@ public class CustomListAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
-        ViewHolder viewHolder;
+    public View getView(final int position, View convertView, ViewGroup parent) {
+        final ViewHolder viewHolder;
+        Button button = null;
 
         if(convertView == null){
             convertView = LayoutInflater.from(context).inflate(R.layout.layout_list_view_row_items,parent,false);
@@ -54,6 +58,15 @@ public class CustomListAdapter extends BaseAdapter {
             viewHolder = (ViewHolder) convertView.getTag();
         }
 
+        button = (Button) convertView.findViewById(R.id.button_handler);
+        button.setTag(position);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Toast.makeText(, "===============");
+                Log.d("richard","====== position: " + position);
+            }
+        });
         Item currentItem = (Item) getItem(position);
         viewHolder.itemName.setText(currentItem.getItemName());
         viewHolder.itemDescription.setText(currentItem.getItemDescription());

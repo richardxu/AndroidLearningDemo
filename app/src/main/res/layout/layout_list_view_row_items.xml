@@ -18,4 +18,13 @@
         android:padding="8dp"
         android:textSize="16sp"/>
 
+    <Button
+        android:id="@+id/button_handler"
+        android:text="press me!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textSize="16sp"
+        />
+
 </LinearLayout>
