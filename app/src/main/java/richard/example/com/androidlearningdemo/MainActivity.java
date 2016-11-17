@@ -12,6 +12,7 @@ import richard.example.com.androidlearningdemo.context.ContextActivity;
 import richard.example.com.androidlearningdemo.fragment.DialogFragment.DialogDemoActivity;
 import richard.example.com.androidlearningdemo.fragment.FragmentLifecyle;
 import richard.example.com.androidlearningdemo.fragment.TabLayout.TabLayoutFragment;
+import richard.example.com.androidlearningdemo.listview.ListViewWithBaseAdapterActivity;
 import richard.example.com.androidlearningdemo.theme.ThemeActivity;
 import richard.example.com.androidlearningdemo.toolBar.ActivityToolBar;
 import richard.example.com.androidlearningdemo.webview.ActivtyWebView;
@@ -114,21 +115,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.d(TAG, "============== button fragment toolbar clicked ============= ");
-                intent  = new Intent(MainActivity.this, ActivityToolBar.class);
+//                intent  = new Intent(MainActivity.this, ActivityToolBar.class);
+                intent  = new Intent(MainActivity.this, ListViewWithBaseAdapterActivity.class);
                 startActivity(intent);
             }
         });
 
-        //=================================================================================
-        buttonFragmentCyle = (Button) findViewById(R.id.button_fragment_theme);
-        buttonFragmentCyle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Log.d(TAG, "============== button fragment theme clicked ============= ");
-                intent  = new Intent(MainActivity.this, ThemeActivity.class);
-                startActivity(intent);
-            }
-        });
+//        //=================================================================================
+//        buttonFragmentCyle = (Button) findViewById(R.id.button_fragment_theme);
+//        buttonFragmentCyle.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Log.d(TAG, "============== button fragment theme clicked ============= ");
+//                intent  = new Intent(MainActivity.this, ThemeActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 
     }
 }
