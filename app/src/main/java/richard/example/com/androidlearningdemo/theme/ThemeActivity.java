@@ -33,14 +33,19 @@ public class ThemeActivity extends AppCompatActivity {
         spThemes.setSelection(MyApplication.currentPosition);
         MyApplication.currentPosition = spThemes.getSelectedItemPosition();
 
-        spThemes.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        spThemes.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view,
+            public void onItemSelected(AdapterView<?> adapterView, View view,
                                     int position, long id) {
                 if(MyApplication.currentPosition != position){
                     Utils.changeToTheme(ThemeActivity.this, position);
                 }
                 MyApplication.currentPosition = position;
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
             }
         });
     }

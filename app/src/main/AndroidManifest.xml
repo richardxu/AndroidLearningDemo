@@ -20,6 +20,7 @@
         <activity android:name=".MainActivity">
         </activity>
         <activity android:name=".context.ContextActivity"> </activity>
+        <activity android:name=".theme.ThemeActivity"></activity>
         <activity android:name=".activity.lifecycle.ActivityLifecycle"></activity>
         <activity android:name=".fragment.FragmentLifecyle"></activity>
         <activity android:name=".fragment.TabLayout.TabLayoutFragment"></activity>
