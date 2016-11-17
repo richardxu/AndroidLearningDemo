@@ -20,6 +20,9 @@ public class MyApplication extends Application {
         mContext = this;
     }
 
+    //App level variable to retain selected spinner value
+    public  static int currentPosition;
+
     public static Context getrichardContext()
     {
         return mContext;
