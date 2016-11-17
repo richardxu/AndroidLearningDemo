@@ -40,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
 //        setContentView(R.layout.activity_linearlayout);
 //        setContentView(R.layout.vector_drawables);
 
+        //use for customing view
+        // setContentView(R.layout.layout_simple_drawing_view);
+
 //        mlistView = (ListView) findViewById(R.id.listview_activities);
 //
         //============================================================================
