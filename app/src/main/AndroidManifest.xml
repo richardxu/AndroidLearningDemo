@@ -23,6 +23,7 @@
         <activity android:name=".theme.ThemeActivity"></activity>
         <activity android:name=".listview.ListViewWithBaseAdapterActivity"></activity>
         <activity android:name=".recyclerview.UserListActivity"></activity>
+        <activity android:name=".touchevent.TouchEventActivity"></activity>
         <activity android:name=".activity.lifecycle.ActivityLifecycle"></activity>
         <activity android:name=".fragment.FragmentLifecyle"></activity>
         <activity android:name=".fragment.TabLayout.TabLayoutFragment"></activity>

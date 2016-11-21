@@ -16,6 +16,7 @@ import richard.example.com.androidlearningdemo.listview.ListViewWithBaseAdapterA
 import richard.example.com.androidlearningdemo.recyclerview.UserListActivity;
 import richard.example.com.androidlearningdemo.theme.ThemeActivity;
 import richard.example.com.androidlearningdemo.toolBar.ActivityToolBar;
+import richard.example.com.androidlearningdemo.touchevent.TouchEventActivity;
 import richard.example.com.androidlearningdemo.webview.ActivtyWebView;
 
 public class MainActivity extends AppCompatActivity {
@@ -120,7 +121,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Log.d(TAG, "============== button fragment toolbar clicked ============= ");
 //                intent  = new Intent(MainActivity.this, ActivityToolBar.class);
-                intent  = new Intent(MainActivity.this, UserListActivity.class);
+//                intent  = new Intent(MainActivity.this, UserListActivity.class);
+                intent = new Intent(MainActivity.this, TouchEventActivity.class);
                 startActivity(intent);
             }
         });
