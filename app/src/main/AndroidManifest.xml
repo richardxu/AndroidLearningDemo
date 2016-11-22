@@ -32,5 +32,9 @@
         <activity android:name=".toolBar.ActivityToolBar"
             android:theme="@style/AppThemeModified"
             ></activity>
+
+        <service android:name=".intentservice.MyTestService"
+            android:exported="false"/>
+
     </application>
 </manifest>
