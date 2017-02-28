@@ -29,6 +29,7 @@
         <activity android:name=".fragment.TabLayout.TabLayoutFragment"></activity>
         <activity android:name=".fragment.DialogFragment.DialogDemoActivity"></activity>
         <activity android:name=".webview.ActivtyWebView"></activity>
+        <activity android:name=".window.WindowActivity"></activity>
         <activity android:name=".toolBar.ActivityToolBar"
             android:theme="@style/AppThemeModified"
             ></activity>
