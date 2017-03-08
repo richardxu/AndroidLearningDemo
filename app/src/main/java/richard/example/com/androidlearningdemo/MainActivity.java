@@ -12,6 +12,7 @@ import richard.example.com.androidlearningdemo.context.ContextActivity;
 import richard.example.com.androidlearningdemo.fragment.DialogFragment.DialogDemoActivity;
 import richard.example.com.androidlearningdemo.fragment.FragmentLifecyle;
 import richard.example.com.androidlearningdemo.fragment.TabLayout.TabLayoutFragment;
+import richard.example.com.androidlearningdemo.intentservice.IntentServiceActivity;
 import richard.example.com.androidlearningdemo.listview.ListViewWithBaseAdapterActivity;
 import richard.example.com.androidlearningdemo.recyclerview.UserListActivity;
 import richard.example.com.androidlearningdemo.theme.ThemeActivity;
@@ -122,7 +123,8 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG, "============== button fragment toolbar clicked ============= ");
 //                intent  = new Intent(MainActivity.this, ActivityToolBar.class);
 //                intent  = new Intent(MainActivity.this, UserListActivity.class);
-                intent = new Intent(MainActivity.this, TouchEventActivity.class);
+                //intent = new Intent(MainActivity.this, TouchEventActivity.class);
+                intent = new Intent(MainActivity.this, IntentServiceActivity.class);
                 startActivity(intent);
             }
         });

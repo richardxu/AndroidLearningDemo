@@ -25,6 +25,7 @@
         <activity android:name=".recyclerview.UserListActivity"></activity>
         <activity android:name=".touchevent.TouchEventActivity"></activity>
         <activity android:name=".activity.lifecycle.ActivityLifecycle"></activity>
+        <activity android:name=".intentservice.IntentServiceActivity"></activity>
         <activity android:name=".fragment.FragmentLifecyle"></activity>
         <activity android:name=".fragment.TabLayout.TabLayoutFragment"></activity>
         <activity android:name=".fragment.DialogFragment.DialogDemoActivity"></activity>

@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.widget.Toast;
 
 import richard.example.com.androidlearningdemo.R;
@@ -22,6 +23,8 @@ public class IntentServiceActivity extends Activity {
         i.putExtra("foo", "bar");
         //Start the service
         startService(i);
+
+        Log.d("Richard", "========== lunchTestService =========");
     }
 
     public MyTestReceiver receiverForTest;
@@ -29,8 +32,13 @@ public class IntentServiceActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+        Log.d("Richard", "========== 11111111111111  =========");
+        Log.d("Richard", "========== 11111111111111  =========");
+        Log.d("Richard", "========== 11111111111111  =========");
 //        setContentView(R.layout.);
         setupServiceReceiver();
+//        lunchTestService();
+        onStartService();
     }
 
     //Starts the IntentService
